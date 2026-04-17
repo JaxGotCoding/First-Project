@@ -37,5 +37,10 @@ def wolf():
     else:
         print("You fight the wolf... risky move!")
 
+def health():
+    health = 100
+    print(f"your health is {health}")
+
+health()
 # start the game
 start()
