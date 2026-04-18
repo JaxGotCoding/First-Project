@@ -1,3 +1,9 @@
+import random
+def game():
+    player_health = 100
+    monster_health = 50
+    print("A monster appears!")
+
 def start():
     name = input("Hello! What is your name? ")
     print(f"Nice to meet you, {name}")
@@ -18,13 +24,21 @@ def show_health(state):
 
 
 def damage(state, amount):
-    state["health"] -= amount
+    state["health"] = random.randint(10, 20)
+    monster_health -= damage
     print(f"You take {amount} damage!")
     show_health(state)
 
     if state["health"] <= 0:
         print("💀 You died!")
         exit()
+
+def attack_points():
+    if attack_points > 50:
+     print(f"you loose {show_health}")
+    else:
+        attack_points <= 50
+        print("your lucky, you take no dmamage")
 
 
 def forest(state):
